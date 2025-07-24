@@ -1,10 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Mon site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Site Vitrine</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello, monde !</h1>
+  <header>
+    <h1>Nom de la boutique</h1>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#gallery">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bienvenue dans notre univers</h2>
+    <p>Bijoux artisanaux, élégance intemporelle.</p>
+  </section>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Notre maison conçoit des bijoux sur mesure depuis trois générations.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Galerie</h2>
+    <div class="gallery-grid">
+      <img src="assets/images/image1.jpg" alt="Bijou 1">
+      <img src="assets/images/image2.jpg" alt="Bijou 2">
+      <img src="assets/images/image3.jpg" alt="Bijou 3">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email : contact@maisonbijoux.com</p>
+    <p>Adresse : 12 rue des Orfèvres, Paris</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Maison Bijoux</p>
+  </footer>
 </body>
 </html>

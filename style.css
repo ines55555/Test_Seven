@@ -1,5 +1,60 @@
-body {
-  font-family: sans-serif;
-  background: #fafafa;
-  color: #333;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fdfcf9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('assets/images/hero.jpg') center/cover no-repeat;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+}
+

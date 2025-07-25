@@ -1,78 +1,40 @@
-/* Reset & base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f9fafb;
-  color: #222;
-  padding: 2rem;
-}
-h1, h2 {
-  font-weight: 600;
-}
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-/* Header */
-header.header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-header h1 {
-  font-size: 2rem;
-  color: #2b2b2b;
-}
-
-/* Main grid */
-main.main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-/* Cards */
-.card {
-  background-color: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
+.metric-card {
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: 0.2s ease;
 }
-.card.full {
-  grid-column: span 2;
+.metric-card:hover {
+  transform: translateY(-2px);
 }
 
-.card h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.75rem;
+.icon-container {
+  margin-bottom: 1rem;
 }
-.metric {
-  font-size: 2.4rem;
-  color: #1d4ed8;
-  font-weight: 700;
+
+.icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.metric-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a202c;
   margin-bottom: 0.5rem;
 }
-.card p {
-  font-size: 0.9rem;
-  color: #555;
-}
-.card ul li {
-  padding: 0.4rem 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-.card ul li:last-child {
-  border-bottom: none;
+
+.metric-card .value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a202c;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 0.85rem;
-  color: #888;
+.metric-card .value.red {
+  color: #e63946;
 }

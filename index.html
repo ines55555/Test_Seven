@@ -2,47 +2,44 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Seven Analytics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Seven Learn</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Seven. Learn.</h1>
-    <nav>
-      <a href="#about">À propos</a>
-      <a href="#gallery">Galerie</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="header">
+    <h1>Dashboard Performance • Seven Learn</h1>
   </header>
-
-  <section class="hero">
-    <h2>Bienvenue dans notre univers</h2>
-    <p>Memorable learning experience.</p>
-  </section>
-
-  <section id="about">
-    <h2>À propos</h2>
-    <p>Notre maison conçoit des bijoux sur mesure depuis trois générations.</p>
-  </section>
-
-  <section id="gallery">
-    <h2>Galerie</h2>
-    <div class="gallery-grid">
-      <img src="assets/images/image1.jpg" alt="Bijou 1">
-      <img src="assets/images/image2.jpg" alt="Bijou 2">
-      <img src="assets/images/image3.jpg" alt="Bijou 3">
+  <main class="main">
+    <div class="card">
+      <h2>Trafic mensuel</h2>
+      <div class="metric" id="sessions">–</div>
+      <p>Sessions (visiteurs) ce mois-ci</p>
     </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : contact@maisonbijoux.com</p>
-    <p>Adresse : 12 rue des Orfèvres, Paris</p>
-  </section>
-
+    <div class="card">
+      <h2>Taux de rebond</h2>
+      <div class="metric" id="bounce">–</div>
+      <p>Pourcentage de visiteurs qui quittent sans interaction</p>
+    </div>
+    <div class="card full">
+      <h2>Pages les plus vues</h2>
+      <ul id="top-pages"></ul>
+    </div>
+    <div class="card">
+      <h2>Leads générés</h2>
+      <div class="metric" id="leads">–</div>
+      <p>Formulaires ou démos demandées</p>
+    </div>
+    <div class="card full">
+      <h2>Actions recommandées</h2>
+      <ul id="actions">
+        <li>–</li>
+      </ul>
+    </div>
+  </main>
   <footer>
-    <p>&copy; 2025 Maison Bijoux</p>
+    <p>&copy; 2025 Seven Learn • Dashboard interne</p>
   </footer>
+  <script src="dashboard.js"></script>
 </body>
 </html>
